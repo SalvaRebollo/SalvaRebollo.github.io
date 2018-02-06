@@ -1,0 +1,149 @@
+body {
+    font: 1em/150% Arial, Helvetica, sans-serif;
+    background-image: url("./img/ignasi.png");
+    background-size: auto;
+}
+a {
+    color: #669;
+    texto-decoration: none;
+}
+
+#content p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+    texto-decoration: underline;
+}
+h1 {
+    font: bold 36px/100% Arial, Helvetica, sans-serif;
+}
+
+/************************************************************************************
+ESTRUCTURA
+*************************************************************************************/
+#pagewrap {
+    padding: 5px;
+    width: 960px;
+    margin: 20px auto;
+    background-color: rgba(10, 10, 10, 0.3);*/
+}
+#header {
+    height: 180px;
+}
+#content {
+    width: 600px;
+    float: left;
+    padding-top: 12px;
+}
+
+#content .publicacion{
+    padding: 0px 0px 0px 5px;
+}
+
+#content .publicacion h2{
+    font-family: 'Oswald', sans-serif;
+    display: inline;
+    padding: 0px 0px 0px 0px;
+}
+
+#content .flechatras {
+    height: 20px;
+    width: 20px;
+}
+
+#content .publicacion a{
+    color: black;
+}
+
+#content .publicacion a:hover{
+    color: orange;
+}
+
+#content .publicacion #final a{
+    color: orange;
+}
+
+#sidebar {
+    width: 300px;
+    float: right;
+    padding: 0px 0px 0px 5px;
+}
+#footer {
+    clear: both;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* para 980px o menos */
+@media screen and (max-width: 980px) {
+    
+    #pagewrap {
+        width: 94%;
+    }
+    #content {
+        width: 68%;
+    }
+    #sidebar {
+        width: 30%;
+    }
+
+}
+
+/* para 700px o menos */
+@media screen and (max-width: 700px) {
+
+    #content {
+        width: auto;
+        float: none;
+    }
+    #sidebar {
+        width: auto;
+        float: none;
+    }
+
+}
+
+/* para 480px o menos */
+@media screen and (max-width: 480px) {
+
+    #header {
+        height: auto;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    #sidebar {
+        display: none;
+    }
+
+}
+
+/* borde & guideline (puedes ignorarlo) */
+#content {
+    background-color: rgba(244, 67, 54, 0.73);
+}
+#sidebar {
+    background-color: rgba(244, 67, 54, 0.73);
+}
+#header, #content, #sidebar {
+    margin-bottom: 5px;
+}
+#pagewrap, #header, #content, #sidebar, #footer {
+    border: solid 1px #ccc;
+}
+
+
+ img.imgpubli , iframe {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 5px solid rgba(255, 177, 0, 0.22);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+}
+
+
