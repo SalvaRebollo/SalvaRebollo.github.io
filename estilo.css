@@ -1,6 +1,34 @@
+/************************************************************************************
+FONDOS
+*************************************************************************************/
 body {
     font: 1em/150% Arial, Helvetica, sans-serif;
-    background-image: url("./img/ignasi.png");
+    background-image: url("./img/indexfondo.png");
+    background-size: auto;
+}
+#introduccion {
+    background-image: url("./img/introduccionfondo.png");
+    font: 1em/150% Arial, Helvetica, sans-serif;
+    background-size: auto;
+}
+#about{
+    font: 1em/150% Arial, Helvetica, sans-serif;
+    background-image: url("./img/aboutfondo.png");
+    background-size: auto;
+}
+#masdesalvi{
+    font: 1em/150% Arial, Helvetica, sans-serif;
+    background-image: url("./img/masdesalvifondo.png");
+    background-size: auto;
+}
+#contacto{
+    font: 1em/150% Arial, Helvetica, sans-serif;
+    background-image: url("./img/contactofondo.png");
+    background-size: auto;
+}
+#encuesta{
+    font: 1em/150% Arial, Helvetica, sans-serif;
+    background-image: url("./img/encuestafondo.png");
     background-size: auto;
 }
 #sidebar a {
@@ -34,6 +62,8 @@ ESTRUCTURA
 }
 #header {
     height: 180px;
+    background-image: url("./img/header.png");
+    background-size: cover;
 }
 #content {
     width: 600px;
@@ -75,6 +105,10 @@ ESTRUCTURA
 }
 #footer {
     clear: both;
+    background-color: #d7752582;
+    padding: 10px 0px 5px 5px;
+    font-size: 13px;
+    line-height: 43px;
 }
 
 /************************************************************************************
@@ -92,6 +126,9 @@ MEDIA QUERIES
     #sidebar {
         width: 30%;
     }
+    #button li a {
+        display: none;
+    }
 
 }
 
@@ -106,6 +143,10 @@ MEDIA QUERIES
         width: auto;
         float: none;
     }
+    
+    #button li a {
+        display: none;
+    }
 
 }
 
@@ -119,6 +160,9 @@ MEDIA QUERIES
         font-size: 24px;
     }
     #sidebar {
+        display: none;
+    }
+    #button li a {
         display: none;
     }
 
@@ -149,8 +193,6 @@ MEDIA QUERIES
     max-width: 95%;
 }
 
-
-
 #sidebar li {
     list-style-type: circle;
     margin-top: 10px; 
@@ -159,4 +201,87 @@ MEDIA QUERIES
 #sidebar a:hover {
     color: gray;
     transition: 0.5s;
+}
+
+/*Menu Horizontal*/
+#button {
+    margin-top: 137px;
+	padding: 0;
+}
+
+#button li {
+	display: inline;
+}
+
+#button li a {
+	font-family: Arial;
+	font-size:11px;
+	text-decoration: none;
+	float:left;
+	padding: 10px;
+	background-color: #6b15cb;
+	color: #fff;
+}
+
+#button li a:hover {
+	background-color: #724e1c/*#2586d7*/;
+	margin-top:-2px;
+	padding-bottom:12px;
+}
+
+/*Importar fuentes*/
+@font-face {
+    font-family: socialmedia;
+    src: url(./fonts/socialmediabueno.otf);
+}
+
+/*BOTONES*/
+.twitter {
+    float: right;
+    margin-right: 10px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f0c911), color-stop(1, #f2ab1e) );
+	background:-moz-linear-gradient( center top, #f0c911 5%, #f2ab1e 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0c911', endColorstr='#f2ab1e');
+	background-color:#f0c911;
+	-webkit-border-top-left-radius:13px;
+	-moz-border-radius-topleft:13px;
+	border-top-left-radius:13px;
+	-webkit-border-top-right-radius:13px;
+	-moz-border-radius-topright:13px;
+	border-top-right-radius:13px;
+	-webkit-border-bottom-right-radius:13px;
+	-moz-border-radius-bottomright:13px;
+	border-bottom-right-radius:13px;
+	-webkit-border-bottom-left-radius:13px;
+	-moz-border-radius-bottomleft:13px;
+	border-bottom-left-radius:13px;
+text-indent:0px;
+	border:1px solid #e65f44;
+	display:inline-block;
+	color:dodgerblue;
+	font-family:socialmedia;
+	font-size:45px;
+	font-weight:normal;
+	font-style:normal;
+height:40px;
+	line-height:40px;
+width:39px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ded17c;
+}.twitter:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f2ab1e), color-stop(1, #f0c911) );
+	background:-moz-linear-gradient( center top, #f2ab1e 5%, #f0c911 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2ab1e', endColorstr='#f0c911');
+	background-color:#f2ab1e;
+}.twitter:active {
+	position:relative;
+	top:1px;
+}
+
+#header .twitter {
+    
 }
