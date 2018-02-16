@@ -224,7 +224,7 @@ MEDIA QUERIES
 }
 
 #button li a:hover {
-	background-color: #724e1c/*#2586d7*/;
+	background-color: #724e1c;
 	margin-top:-2px;
 	padding-bottom:12px;
 }
@@ -282,6 +282,66 @@ width:39px;
 	top:1px;
 }
 
-#header .twitter {
+div.datos{
+	margin: 0 auto;
+	width: 90%;
+    font: bold 14px/100%, 'Open Sans', sans-serif;
+    word-wrap: break-word;
+}
+
+.capaform {
+    padding: 0px 4px 0px 0px;
+}
+
+.tabla {
+	border-collapse: collapse;
+	color: #fff;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.tabla, .tabla th, .tabla td {
+	border: 2px solid #444;
+    font: bold 14px/100% 'Open Sans', sans-serif;
+   
     
+}
+
+
+.tabla th{
+	font: bold 18px/100% Oswald, sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	padding: 15px 0;
+}
+
+.tabla td {
+	text-align: left;
+	padding: 13px 12px;
+}
+
+.tabla td.datos{
+	color: #45ffab;
+}
+
+.tablaform {
+	margin: 0 auto;
+	width: 96%;
+    overflow: hidden;
+}
+table.tabla{
+	background-color: #a97a54a6;
+}
+
+div.boton{
+	
+}
+div.boton input[type="submit"]{
+    background-color: rgba(10, 10, 10, 0.3);
+    color: #fff;
+    font-family: oswald;
+    font-size: 1.6em;
+    letter-spacing: 0.3em;
+    margin: 0px 0px 0px 20%;
+    padding: 5px 0;
+    width: 56%;
 }

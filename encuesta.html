@@ -39,42 +39,79 @@
 
 
 			<p><span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                teasmpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawqerwqeraaaaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,aass
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-            <p><a href="#inicio" id="final">Ir arriba</a></span></p>
+<!--FORMULARIO-->
+            <div class="capaform">
+			<form action="./formulario.php" method="post">
+                
+				<fieldset class="formulario">
+					<legend>Formulario de Satisfacción</legend>
+                    <!--PREGUNTA-->
+					<fieldset>
+						<legend>Datos Personales</legend>
+						<div class="datos">
+							<div class="nomape">
+								<label for="nombre">Nombre</label>
+								&nbsp;&nbsp;<input type="text" name="nombre"><br>
+								<label for="apellidos">Apellidos</label>
+								<input type="text" name="apellidos">
+							</div>
+						</div>
+					</fieldset><br>
+                    <!--FIN PREGUNTA-->
+                    
+					<fieldset>
+						<legend>Encuesta</legend>
+						<div class="encuesta">
+                            <!--PREGUNTA-->
+							<div class="gustaweb">
+								<label for="gustaweb">¿Te ha gustado la web?</label>
+								<br>
+								<select name="gustaweb">
+									<option value="" selected="selected">- selecciona -</option>
+									<option value="Poco">Poco</option>
+									<option value="Notbad">Not bad</option>
+									<option value="Bastante">Bastante</option>
+									<option value="Mucho">Mucho</option>
+								</select>
+							</div>
+                            <!--FIN PREGUNTA-->
+                            <br>
+                            <!--PREGUNTA-->
+							<div class="musica">
+								<label for="produccion">¿Cuanto te gustaría aprender producción musical?</label>
+								<div class="radio">
+									<input type="radio" name="produccion" value="Nada"><label>Nada&nbsp;</label>
+								</div>
+								<div class="radio">
+									<input type="radio" name="produccion" value="Poco"><label>Poco&nbsp;</label>
+								</div>
+								<div class="radio">
+									<input type="radio" name="produccion" value="Mucho"><label>Mucho</label>
+								</div>
+							</div>
+                            <!--FIN PREGUNTA-->
+                            <br>
+                            <!--PREGUNTA-->
+							<div class="comentario">
+								<label for="comentarios">Comentarios / Sugerencias</label>
+								<br>
+								<textarea name="comentarios" rows="7" cols="70"></textarea>
+							</div>
+                            <!--FIN PREGUNTA-->
+						</div>
+					</fieldset><br>
+                    <!--BOTON ENVIAR-->
+					<div class="boton">
+						<input type="submit" name="" value="Enviar">
+					</div>
+                    <!--FIN BOTON ENVIAR-->
+                    
+				</fieldset>
+			</form>
 		</div>
-
-
-			
+<!--FIN FORMULARIO-->
+            <p><a href="#inicio" id="final">Ir arriba</a></span></p>
+		</div>		
 	</div>
 
 	<div id="sidebar">
