@@ -39,7 +39,7 @@
     <div class="publicacion">
         <a href="#inicio" id="inicio"></a>
 
-        <a href="./index.html"><img class="flechatras" src="./img/flechatras.png" title="Ir atrás"></a>
+        <a href="./encuesta.html"><img class="flechatras" src="./img/flechatras.png" title="Ir atrás"></a>
         <h2>Encuesta</h2>
 <!--ENCUESTA PHP-->
         <br><br>
@@ -48,19 +48,19 @@
             <table class="tabla">
                 <thead>
                     <tr>
-                        <th colspan="2">DATOS PERSONALES</th>
+                        <th colspan="2" class="encapregunta">DATOS PERSONALES</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td width="30%">Nombre</td>
+                        <td width="30%" class="pregunta">Nombre</td>
                         <td class="datos">
                             <?php echo $_POST["nombre"]?>
                         </td>
                         
                     </tr>
                     <tr>
-                        <td width="20%">Apellido</td>
+                        <td width="20%" class="pregunta">Apellido</td>
                         <td colspan="2" class="datos">
                             <?php echo $_POST["apellidos"]?>
                         </td>
@@ -68,12 +68,12 @@
                 </tbody>
                 <thead>
                     <tr>
-                        <th colspan="2">ENCUESTA</th>
+                        <th colspan="2" class="encapregunta">ENCUESTA</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>¿Te ha gustado la web?</td>
+                        <td class="pregunta">¿Te ha gustado la web?</td>
                         <td class="datos">
                             <?php echo $_POST["gustaweb"]?>
                         </td>
@@ -81,14 +81,14 @@
                         
                     </tr>
                     <tr>
-                        <td>¿Te gustaría aprender producción musical?</td>
+                        <td class="pregunta">¿Cuánto te gustaría aprender producción musical?</td>
                         <td class="datos">
                             <?php echo $_POST["produccion"]?>
                         </td>
                       
                     </tr>
                     <tr>
-                        <td>Comentario/Sugerencia</td>
+                        <td class="pregunta">Comentario/Sugerencia</td>
                         <td class="datos">
                             <?php echo $_POST["comentarios"]?>
                         </td>
@@ -106,6 +106,7 @@
 		<ul>
 			<li><a href="./index.html">Home</a></li>
 			<li><a href="./introduccion.html">Introduccion</a></li>
+            <li><a href="./galeria.html">Galería de Imágenes</a></li>
 			<li><a href="./about.html">About</a></li>
 			<li><a href="./masdesalvi.html">Más de Salvi</a></li>
 			<li><a href="./contacto.html">Contacto</a></li>
